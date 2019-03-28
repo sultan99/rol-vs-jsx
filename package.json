@@ -1,0 +1,43 @@
+{
+  "name": "rol-vs-jsx",
+  "version": "0.0.1",
+  "description": "RoL vs JSX",
+  "sideEffects": false,
+  "scripts": {
+    "rol": "webpack-dev-server --config ./rol/webpack.config.js",
+    "rol:build": "webpack -p --config ./rol/webpack.config.js",
+    "jsx": "webpack-dev-server --config ./jsx/webpack.config.js",
+    "jsx:build": "webpack -p --config ./jsx/webpack.config.js"
+  },
+  "author": "sultan99",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sultan99/rol-vs-jsx"
+  },
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-on-lambda": "latest"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "@babel/preset-react": "^7.0.0",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.5",
+    "babel-runtime": "^6.26.0",
+    "copy-webpack-plugin": "^5.0.2",
+    "dynamic-cdn-webpack-plugin": "^4.0.0",
+    "eslint": "^5.15.3",
+    "eslint-plugin-async-await": "0.0.0",
+    "eslint-plugin-better-styled-components": "^1.1.1",
+    "eslint-plugin-react": "^7.12.4",
+    "html-webpack-plugin": "^3.2.0",
+    "module-to-cdn": "^3.1.2",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.2.1"
+  }
+}
