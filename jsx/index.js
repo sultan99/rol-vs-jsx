@@ -1,8 +1,4 @@
-import React from 'react'
 import App from './app'
-import {render} from 'react-dom'
+import benchmark from 'general/benchmark'
 
-render(
-  <App/>,
-  document.getElementById(`app`)
-)
+benchmark(`jsx`, <App/>)

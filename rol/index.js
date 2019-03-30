@@ -1,7 +1,4 @@
 import app from './app'
-import {render} from 'react-dom'
+import benchmark from 'general/benchmark'
 
-render(
-  app,
-  document.getElementById(`app`)
-)
+benchmark(`rol`, app)

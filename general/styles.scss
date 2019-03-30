@@ -1,0 +1,41 @@
+html {
+  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial;
+
+  input, select, textarea, button {
+    font-family:inherit;
+  }
+  code {
+    font-weight: bold;
+    font-family: monospace;
+  }
+}
+
+.header {
+
+}
+
+.app-logo {
+  > img {
+    height: 24px;
+    padding-right: 8px;
+  }
+  > span {
+    font-weight: 700;
+    font-size: 16px;
+  }
+  > img, span {
+    vertical-align: middle;
+  }
+}
+
+.navigation{
+
+}
+
+.title {
+  font-size: 20px;
+}
+
+.instructions {
+  font-size: 16px;
+}

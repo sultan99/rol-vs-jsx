@@ -2,12 +2,16 @@
   "name": "rol-vs-jsx",
   "version": "0.0.1",
   "description": "RoL vs JSX",
-  "sideEffects": false,
+  "sideEffects": [
+    "*.scss"
+  ],
   "scripts": {
-    "rol": "webpack-dev-server --config ./rol/webpack.config.js",
+    "build": "npm run rol:build && npm run jsx:build",
+    "prebuild": "rimraf dist",
     "rol:build": "webpack -p --config ./rol/webpack.config.js",
-    "jsx": "webpack-dev-server --config ./jsx/webpack.config.js",
-    "jsx:build": "webpack -p --config ./jsx/webpack.config.js"
+    "jsx:build": "webpack -p --config ./jsx/webpack.config.js",
+    "rol": "webpack-dev-server --config ./rol/webpack.config.js",
+    "jsx": "webpack-dev-server --config ./jsx/webpack.config.js"
   },
   "author": "sultan99",
   "license": "MIT",
@@ -29,13 +33,19 @@
     "babel-loader": "^8.0.5",
     "babel-runtime": "^6.26.0",
     "copy-webpack-plugin": "^5.0.2",
+    "css-loader": "^2.1.1",
     "dynamic-cdn-webpack-plugin": "^4.0.0",
     "eslint": "^5.15.3",
     "eslint-plugin-async-await": "0.0.0",
     "eslint-plugin-better-styled-components": "^1.1.1",
     "eslint-plugin-react": "^7.12.4",
     "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.5.0",
     "module-to-cdn": "^3.1.2",
+    "node-sass": "^4.11.0",
+    "rimraf": "^2.6.3",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0",
     "webpack-dev-server": "^3.2.1"
